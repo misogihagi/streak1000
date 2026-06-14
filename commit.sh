@@ -11,7 +11,6 @@ fi
 one_day=$((60 * 60 * 24))
 
 for i in $(seq 0 999)
-TargetDate
 do
     target_timestamp=$((current_date + (i * one_day)))
     
