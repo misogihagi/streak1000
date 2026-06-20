@@ -2,10 +2,10 @@
 
 if date -d "1970-01-01" +%s >/dev/null 2>&1; then
     # Linux (GNU date)
-    current_date=$(date -d "1970-01-01 00:00:00" +%s)
+    current_date=$(date -d "2000-01-01 00:00:00" +%s)
 else
     # macOS (BSD date)
-    current_date=$(date -j -f "%Y-%m-%d %H:%M:%S" "1970-01-01 00:00:00" +%s)
+    current_date=$(date -j -f "%Y-%m-%d %H:%M:%S" "2000-01-01 00:00:00" +%s)
 fi
 
 one_day=$((60 * 60 * 24))
